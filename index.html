@@ -2,11 +2,53 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>hello world</title>
+        <link rel="stylesheet" href="master.css">
+        <title>与灰叶聊天中</title>
     </head>
     <body>
-        <h1>hello world.</h1>
-        <p>I'm hosted with GitHub Pages.</p>
-        <p>I'm hosted with GitHub Pages.</p>
+        <div class="mobile">
+            <div class="mobile-head">与灰叶聊天中</div>
+            <div class="mobile-body">
+                <div class="mobile-body-background">
+                    <!--  -->
+                </div>
+                <div class="mobile-body-content">
+                    <!--  -->
+                </div>
+            </div>
+            <div class="mobile-foot">
+                <div id="prompt">
+                    <div id="prompt-head">
+                        <div class="say-something">说点什么……</div>
+                        <div id="close-button">
+                            close
+                        </div>
+                    </div>
+                    <div id="prompt-body">
+                        <div id="next-topic">
+                            <ul class="">
+                                <li class="topic-item" data-key="001">技术</li>
+                                <li class="topic-item" data-key="002">爱好</li>
+                                <li class="topic-item" data-key="003">读书</li>
+                                <li class="topic-item" data-key="004">性格</li>
+                                <li class="topic-item" data-key="005">微信</li>
+                                <li class="topic-item" data-key="006">送书</li>
+                                <li class="topic-item" data-key="007">电话</li>
+                                <li class="topic-item" data-key="008">职业</li>
+                                <li class="topic-item" data-key="009">真相</li>
+                                <li class="topic-item" data-key="010">关于</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="input-hint" class="say-something clickable">
+                    <span>说点什么……</span>
+                </div>
+            </div>
+            <div id="prompt-background"></div>
+        </div>
+        <!-- js -->
+        <script src="data.js" charset="utf-8"></script>
+        <script src="master.js" charset="utf-8"></script>
     </body>
 </html>
