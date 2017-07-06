@@ -5,6 +5,9 @@ body {
     background-color: #b7ebe3;
     font-size: 14px;
 }
+#img-loading {
+    display: none;
+}
 .mobile {
     z-index: 999;
     width: 360px;
