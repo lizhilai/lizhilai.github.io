@@ -3,48 +3,39 @@
     <head>
         <meta charset="utf-8">
         <title>ipage pro</title>
-        <link rel="stylesheet" href="master.css">
-        <link rel="stylesheet" href="weather.css">
+        <link rel="stylesheet" href="css/master.css">
+        <link rel="stylesheet" href="css/weather.css">
         <script src="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js" charset="utf-8"></script>
     </head>
     <body>
+        <a href="https://github.com/lizhilai/lizhilai.github.io" target="_blank" class="code">查看源码</a>
+        <a href="https://github.com/lizhilai/lizhilai.github.io" target="_blank" class="github">github</a>
         <div class="mobile">
             <div class="screen">
                 <div class="screens-container">
                     <div class="screen-one">
-                        <div class="screen-one-child-head">
-                            主页
-                        </div>
-                        <div class="screen-one-child chat">
-                            <div class="screen-one-child-title">
-                                与灰叶的对话
-                            </div>
-                            <div class="screen-one-child-description">
-                                模拟聊天效果超酷炫
+                        <div class="screen-one-top">
+                            <div class="time">中国联通</div>
+                            <div class="wifi-battery">
+                                <img src="image/applogo/wifi.png">
+                                <img src="image/applogo/battery.png">
                             </div>
                         </div>
-                        <div class="screen-one-child weather">
-                            <div class="screen-one-child-title">
-                                天气应用
-                            </div>
-                            <div class="screen-one-child-description">
-                                大头大头，下雨不愁
-                            </div>
+                        <div class="screen-one-clock">
+                            <ul class="clock">
+                                <li><div id="hour"></div><span class="time-text">hours</span></li>
+                                <li><div id="minute"></div><span class="time-text">minutes</span></li>
+                                <li><div id="second"></div><span class="time-text">seconds</span></li>
+                            </ul>
                         </div>
-                        <div class="screen-one-child xxx">
-                            <div class="screen-one-child-title">
-                                xxx 小游戏
+                        <div class="app-container">
+                            <div class="screen-one-child chat">
+                                <img src="image/applogo/chatlogo.png">
+                                <span>myChat</span>
                             </div>
-                            <div class="screen-one-child-description">
-                                xxx 待上线
-                            </div>
-                        </div>
-                        <div class="screen-one-child yyy">
-                            <div class="screen-one-child-title">
-                                yyy 小游戏
-                            </div>
-                            <div class="screen-one-child-description">
-                                yyy 待上线
+                            <div class="screen-one-child weather">
+                                <img src="image/applogo/weatherlogo.png">
+                                <span>hi 天气</span>
                             </div>
                         </div>
                     </div>
@@ -90,125 +81,10 @@
                                     <input class="change-city-input" placeholder="请输入城市名称">
                                     <button class="change-city-search-button">查询</button>
                                 </div>
-                                <div class="weather-now">
-                                    <!-- <div class="change-city-container hide">
-                                        <div class="jiao"></div>
-                                        <input class="change-city-input" placeholder="请输入城市名称">
-                                        <button class="change-city-button">查询</button>
-                                    </div> -->
-                                    <!-- <div class="weather-now-temperature">29°</div>
-                                    <img class="weather-now-image" src = 'image/weather/100.png' />
-                                    <div class="weather-now-type">多云</div>
-                                    <div class="weather-now-wind">东北方 微风</div>
-                                    <div class="weather-now-city">石家庄 [切换]</div>
-                                    <div class="weather-now-uptime">[16:42更新]</div>
-                                    <div class="weather-aqi-quality">空气质量 轻度污染</div>
-                                    <div class="weather-aqi-pm25">PM2.5 100</div> -->
-                                </div>
-                                <!-- <div class="weather-aqi">
-                                    <div class="weather-aqi-quality">空气质量 轻度污染</div>
-                                    <div class="weather-aqi-pm25">PM2.5 100</div>
-                                </div> -->
-                                <div class="weather-hourly">
-                                    <!-- <div class="weather-hourly-item">
-                                        <div>15:00</div>
-                                        <img src='image/weather/100.png'>
-                                        <div>多云</div>
-                                        <div>20°</div>
-                                    </div>
-                                    <div class="weather-hourly-item">
-                                        <div>15:00</div>
-                                        <img src='image/weather/100.png'>
-                                        <div>多云</div>
-                                        <div>20°</div>
-                                    </div>
-                                    <div class="weather-hourly-item">
-                                        <div>15:00</div>
-                                        <img src='image/weather/100.png'>
-                                        <div>多云</div>
-                                        <div>20°</div>
-                                    </div> -->
-                                </div>
-
-                                <div class="weather-daily">
-                                    <!-- <div class="weather-daily-item">
-                                        <div>今天</div>
-                                        <div>07/31</div>
-                                        <img src = 'image/weather/100.png' />
-                                        <div>多云</div>
-                                        <div>20°~30°</div>
-                                    </div>
-                                    <div class="weather-daily-item">
-                                        <div>今天</div>
-                                        <div>07/31</div>
-                                        <img src = 'image/weather/100.png' />
-                                        <div>多云</div>
-                                        <div>20°~30°</div>
-                                    </div>
-                                    <div class="weather-daily-item">
-                                        <div>今天</div>
-                                        <div>07/31</div>
-                                        <img src = 'image/weather/100.png' />
-                                        <div>多云</div>
-                                        <div>20°~30°</div>
-                                    </div> -->
-                                </div>
-                                <div class="weather-suggestion">
-                                    <!-- <ul>
-                                        <li data-index="id-1" class="weather-suggestion-index indexActive">空气指数</li>
-                                        <li data-index="id-2" class="weather-suggestion-index">舒适指数</li>
-                                        <li data-index="id-3" class="weather-suggestion-index">洗车指数</li>
-                                        <li data-index="id-4" class="weather-suggestion-index">穿衣指数</li>
-                                        <li data-index="id-5" class="weather-suggestion-index">感冒指数</li>
-                                        <li data-index="id-6" class="weather-suggestion-index">运动指数</li>
-                                        <li data-index="id-7" class="weather-suggestion-index">旅游指数</li>
-                                        <li data-index="id-8" class="weather-suggestion-index">紫外线数</li>
-                                    </ul> -->
-                                    <!-- <div id="id-1" class="weather-suggestion-content contentShow">
-                                        id-1
-                                    </div>
-                                    <div id="id-2" class="weather-suggestion-content">
-                                        id-2
-                                    </div>
-                                    <div id="id-3" class="weather-suggestion-content">
-                                        id-3
-                                    </div>
-                                    <div id="id-4" class="weather-suggestion-content">
-                                        id-4
-                                    </div>
-                                    <div id="id-5" class="weather-suggestion-content">
-                                        id-5
-                                    </div>
-                                    <div id="id-6" class="weather-suggestion-content">
-                                        id-6
-                                    </div>
-                                    <div id="id-7" class="weather-suggestion-content">
-                                        id-7
-                                    </div>
-                                    <div id="id-8" class="weather-suggestion-content">
-                                        id-8
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="screen-two-child xxx-area">
-                            <div class="screen-two-child-head">
-                                <div class="screen-two-child-head-title">
-                                    xxx
-                                </div>
-                                <div class="screen-two-child-head-back">
-                                    < 返回主页
-                                </div>
-                            </div>
-                        </div>
-                        <div class="screen-two-child yyy-area">
-                            <div class="screen-two-child-head">
-                                <div class="screen-two-child-head-title">
-                                    yyy
-                                </div>
-                                <div class="screen-two-child-head-back">
-                                    < 返回主页
-                                </div>
+                                <div class="weather-now"></div>
+                                <div class="weather-hourly"></div>
+                                <div class="weather-daily"></div>
+                                <div class="weather-suggestion"></div>
                             </div>
                         </div>
                     </div>
@@ -216,9 +92,8 @@
             </div>
             <div class="home-button"></div>
         </div>
-        <!-- js -->
-        <script src="data.js" charset="utf-8"></script>
-        <script src="base.js" charset="utf-8"></script>
-        <script src="master.js" charset="utf-8"></script>
+        <script src="js/data.js" charset="utf-8"></script>
+        <script src="js/base.js" charset="utf-8"></script>
+        <script src="js/master.js" charset="utf-8"></script>
     </body>
 </html>
