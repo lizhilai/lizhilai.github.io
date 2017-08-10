@@ -73,6 +73,16 @@ var Screen = {
             Screen.showTime()
         }, 1000)
     },
+    logMagic: function(text, cssText) {
+        var text = 'Talk is cheap, \n\tshow me the code.'
+        var cssText = `
+            color: #fff;
+            font-family: verdana;
+            font-size: 30px;
+            text-shadow: 1px 1px 20px #000;
+        `
+        logMagic(text, cssText)
+    },
 }
 var Chat = {
     shadowActive: function() {
@@ -425,6 +435,7 @@ var _screens = function() {
     Screen.bindChatButtonEvent()
     Screen.bindWeatherButtonEvent()
     Screen.timing()
+    Screen.logMagic()
 }
 var _chat = function() {
     Chat.bindHomeButtonEvent()
