@@ -62,3 +62,11 @@ var ajaxGET = function(url, callback) {
     }
     r.send()
 }
+// logMagic
+var logMagic = function(text, cssText) {
+    var code = '%c'
+    var input = text
+    var html = code + input
+    var css = cssText
+    console.log(html, css)
+}
