@@ -10,25 +10,40 @@ body {
     background-color: #CCFFFF;
     position: relative;
 }
-.code, .github {
-    display: inline-block;
+.aside {
+    list-style: none;
     text-decoration: none;
-    padding: 6px 10px;
-    margin: 20px 0px 0px 10px;
-    border: 1px solid blue;
-    border-radius: 4px;
-    transition: color 0.5s, background-color 0.5s;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
-.code:hover {
-    color: #CCFFFF;
-    background-color: blue;
-    transition: color 0.5s, background-color 0.5s;
+/*.aside > li {
+    padding: 10px 30px 10px 10px;
+    background-color: #00CC99;
+    border-radius: 1px 0px 0px 1px;
+}*/
+.aside a {
+    height: 40px;
+    width: 120px;
+    line-height: 40px;
+    display: block;
+    background-color: #999;
+    padding: 0px 0px 0px 10px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: 0px 0px 10px #888;
+    transition: text-indent 0.5s;
 }
-.github:hover {
-    color: #CCFFFF;
-    background-color: blue;
-    transition: color 0.5s, background-color 0.5s;
+.aside a:hover {
+    text-indent: 10px;
+    transition: text-indent 0.5s;
 }
+.aside li {
+    margin-bottom: 10px;
+}
+
 .mobile {
     width: 342px;
     height: 608px;
